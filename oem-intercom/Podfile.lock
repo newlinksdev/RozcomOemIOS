@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (5.2.1)
+  - QuickBlox (2.17.4)
+  - Quickblox-WebRTC (2.7.5):
+    - QuickBlox (>= 2.7.5)
+  - RozcomOem (0.0.3):
+    - Alamofire
+    - QuickBlox (= 2.17.4)
+    - Quickblox-WebRTC (~> 2.7)
+    - SwiftyJSON
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Quickblox-WebRTC
+  - RozcomOem
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - QuickBlox
+    - Quickblox-WebRTC
+    - RozcomOem
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  QuickBlox: 992be26bc127313991a1337dfd98c9359832c147
+  Quickblox-WebRTC: 6be5253719fc8b747408fdac53985d04d40f3172
+  RozcomOem: 92c274e70e1d1dce42b36ed6586dd613a38115f9
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: c2d550ef88cbc17b0ecba5d9e98d66054d540700
+
+COCOAPODS: 1.9.3

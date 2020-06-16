@@ -1,0 +1,32 @@
+/* 
+  Localized.strings
+  RozcomOem
+
+  Created by Developer on 10.04.2020.
+  Copyright © 2020 Test. All rights reserved.
+*/
+"user_busy" = "User busy";
+"user_not_respond" = "User didn`t respond";
+"sure_open_gate" = "האם אתה בטוח שאתה רוצה לפתוח את השער";
+"sure_open_all_gates" = "האם אתה בטוח שאתה רוצה לפתוח את כל השערים";
+"error" = "Error";
+"inputs_cannot_be_empty" = "Inputs can`t be empty";
+"ok" = "OK";
+"cancel" = "Cancel";
+"rozcom" = "ROZCOM";
+"gate" = "שער";
+"chat" = "Chat";
+"door_opened" = "פתיחת דלת התבצעה בהצלחה";
+"no_monitor_for_number" = "לא נמצאוו הגדרות מוניטורים למספר זה";
+"enter_code" = "הקש קוד";
+"enter_phone" = "הקש מספר טלפון";
+"prepare_to_call" = "מתכונן לשיחה";
+"invalid_code" = "קוד לא תקין";
+"on" = "On";
+"off" = "Off";
+"ppt_on" = "Ptt On";
+"ppt_off" = "Ptt Off";
+"empty_phone" = "Phone can`t be empty";
+"empty_code" = "Code can`t be empty";
+"user_not_exist" = "User not exist";
+"problem_with_internet" = "Problem with internet";
