@@ -1,34 +1,105 @@
 PODS:
-  - Alamofire (5.2.1)
+  - Alamofire (5.1.0)
+  - FFCircularProgressView (0.5)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - QMChatViewController (0.6.6):
+    - FFCircularProgressView
+    - QMChatViewController/Categories (= 0.6.6)
+    - QMChatViewController/Protocols (= 0.6.6)
+    - QMChatViewController/QMChatDataSource (= 0.6.6)
+    - QMChatViewController/QMChatLocationSnapshotter (= 0.6.6)
+    - QMChatViewController/Utils (= 0.6.6)
+    - QMChatViewController/Views (= 0.6.6)
+    - QuickBlox
+    - SDWebImage
+    - TTTAttributedLabel
+  - QMChatViewController/Categories (0.6.6):
+    - FFCircularProgressView
+    - QuickBlox
+    - SDWebImage
+    - TTTAttributedLabel
+  - QMChatViewController/Protocols (0.6.6):
+    - FFCircularProgressView
+    - QuickBlox
+    - SDWebImage
+    - TTTAttributedLabel
+  - QMChatViewController/QMChatDataSource (0.6.6):
+    - FFCircularProgressView
+    - QMChatViewController/Utils
+    - QuickBlox
+    - SDWebImage
+    - TTTAttributedLabel
+  - QMChatViewController/QMChatLocationSnapshotter (0.6.6):
+    - FFCircularProgressView
+    - QMChatViewController/Utils
+    - QuickBlox
+    - SDWebImage
+    - TTTAttributedLabel
+  - QMChatViewController/Utils (0.6.6):
+    - FFCircularProgressView
+    - QMChatViewController/Categories
+    - QuickBlox
+    - SDWebImage
+    - TTTAttributedLabel
+  - QMChatViewController/Views (0.6.6):
+    - FFCircularProgressView
+    - QMChatViewController/Categories
+    - QMChatViewController/Protocols
+    - QMChatViewController/Utils
+    - QuickBlox
+    - SDWebImage
+    - TTTAttributedLabel
   - QuickBlox (2.17.4)
   - Quickblox-WebRTC (2.7.5):
     - QuickBlox (>= 2.7.5)
-  - RozcomOem (0.0.3):
-    - Alamofire
+  - RozcomOem (0.0.6):
+    - Alamofire (= 5.1.0)
     - QuickBlox (= 2.17.4)
     - Quickblox-WebRTC (~> 2.7)
-    - SwiftyJSON
+    - SwiftyJSON (= 5.0.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
   - SwiftyJSON (5.0.0)
+  - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
-  - Quickblox-WebRTC
+  - Alamofire (= 5.1.0)
+  - FFCircularProgressView
+  - NVActivityIndicatorView (= 4.8.0)
+  - QMChatViewController (= 0.6.6)
+  - Quickblox-WebRTC (~> 2.7)
   - RozcomOem
+  - SDWebImage (~> 4.4.6)
+  - SwiftyJSON (= 5.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FFCircularProgressView
+    - NVActivityIndicatorView
+    - QMChatViewController
     - QuickBlox
     - Quickblox-WebRTC
     - RozcomOem
+    - SDWebImage
     - SwiftyJSON
+    - TTTAttributedLabel
 
 SPEC CHECKSUMS:
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  FFCircularProgressView: 683a4ab1e1bd613246a3dffa61503ffdebcde8d8
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  QMChatViewController: 43e22929d4abbdb88cc5db5b25c54f13dbfe8373
   QuickBlox: 992be26bc127313991a1337dfd98c9359832c147
   Quickblox-WebRTC: 6be5253719fc8b747408fdac53985d04d40f3172
-  RozcomOem: 92c274e70e1d1dce42b36ed6586dd613a38115f9
+  RozcomOem: be140d071fc8f05e431e8b32aeb5e059fff255c0
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: c2d550ef88cbc17b0ecba5d9e98d66054d540700
+PODFILE CHECKSUM: 5d9d1186493c29669874a65297d2bd4c0245b514
 
 COCOAPODS: 1.9.3

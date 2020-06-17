@@ -1,0 +1,11 @@
+framework module RozcomOem {
+  umbrella header "RozcomOem.h"
+
+  export *
+  module * { export * }
+}
+
+module RozcomOem.Swift {
+    header "RozcomOem-Swift.h"
+    requires objc
+}
