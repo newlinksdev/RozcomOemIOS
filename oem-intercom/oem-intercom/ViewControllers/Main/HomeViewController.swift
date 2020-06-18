@@ -139,8 +139,8 @@ class HomeViewController: UIViewController {
     @IBAction func btnAcceptChatClicked(_ sender: Any) {
         let chatViewController = ROChatViewController()
         chatViewController.setup(endCall: #imageLiteral(resourceName: "Button_disconnect"),
-                                 openAll: #imageLiteral(resourceName: "Button_Open"),
-                                 openDoor: #imageLiteral(resourceName: "opBTM"),
+                                 openAll: #imageLiteral(resourceName: "opBTM"),
+                                 openDoor: #imageLiteral(resourceName: "Button_Open"),
                                  gateText: "gate".localized,
                                  sureOpenGateText: "sure_open_gate".localized,
                                  userBusyText: "user_busy".localized)

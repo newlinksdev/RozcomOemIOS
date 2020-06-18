@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44807E53848B8A4DAF6E3FE5 /* Pods_oem_intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DF558EE1D6CD795B16C87B /* Pods_oem_intercom.framework */; };
-		D853C232249A64F000E6B7A5 /* RozcomOem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D853C230249A64EE00E6B7A5 /* RozcomOem.framework */; };
-		D853C233249A64F000E6B7A5 /* RozcomOem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D853C230249A64EE00E6B7A5 /* RozcomOem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C57E47BE248CA25DC91DAD3 /* Pods_oem_intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA4AD17ACF6ECDAB4E70919 /* Pods_oem_intercom.framework */; };
+		D85E6BA8249B623500977F8C /* RozcomOem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E6BA6249B620F00977F8C /* RozcomOem.framework */; };
+		D85E6BA9249B623500977F8C /* RozcomOem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85E6BA6249B620F00977F8C /* RozcomOem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8C9E6ED2497BED8002E3248 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CC2497BED7002E3248 /* PushManager.swift */; };
 		D8C9E6EE2497BED8002E3248 /* AcountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CD2497BED7002E3248 /* AcountManager.swift */; };
 		D8C9E6EF2497BED8002E3248 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CF2497BED7002E3248 /* Constants.swift */; };
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D853C233249A64F000E6B7A5 /* RozcomOem.framework in Embed Frameworks */,
+				D85E6BA9249B623500977F8C /* RozcomOem.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,10 +46,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03EC88EEB05D8459A1D1CFDB /* Pods-oem-intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.release.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.release.xcconfig"; sourceTree = "<group>"; };
-		28DF558EE1D6CD795B16C87B /* Pods_oem_intercom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oem_intercom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29D747FF9B22DC1E858B8D9B /* Pods-oem-intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.debug.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.debug.xcconfig"; sourceTree = "<group>"; };
-		D853C230249A64EE00E6B7A5 /* RozcomOem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RozcomOem.framework; sourceTree = "<group>"; };
+		7C909313233D27E390C76EF6 /* Pods-oem-intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.debug.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0FAB3F0E2A7B403693A236 /* Pods-oem-intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.release.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.release.xcconfig"; sourceTree = "<group>"; };
+		D85E6BA6249B620F00977F8C /* RozcomOem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RozcomOem.framework; sourceTree = "<group>"; };
 		D8C9E6B42497BE8D002E3248 /* oem-intercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oem-intercom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C9E6C52497BE8E002E3248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C9E6CC2497BED7002E3248 /* PushManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		D8C9E6EA2497BED8002E3248 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D8C9E6EC2497BED8002E3248 /* PushClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushClient.swift; sourceTree = "<group>"; };
 		D8C9E7002497C03D002E3248 /* oem-intercom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "oem-intercom.entitlements"; sourceTree = "<group>"; };
+		FEA4AD17ACF6ECDAB4E70919 /* Pods_oem_intercom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oem_intercom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D853C232249A64F000E6B7A5 /* RozcomOem.framework in Frameworks */,
-				44807E53848B8A4DAF6E3FE5 /* Pods_oem_intercom.framework in Frameworks */,
+				D85E6BA8249B623500977F8C /* RozcomOem.framework in Frameworks */,
+				7C57E47BE248CA25DC91DAD3 /* Pods_oem_intercom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,16 +92,16 @@
 		40E08A3178CDAC1D5630A5BF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				29D747FF9B22DC1E858B8D9B /* Pods-oem-intercom.debug.xcconfig */,
-				03EC88EEB05D8459A1D1CFDB /* Pods-oem-intercom.release.xcconfig */,
+				7C909313233D27E390C76EF6 /* Pods-oem-intercom.debug.xcconfig */,
+				9D0FAB3F0E2A7B403693A236 /* Pods-oem-intercom.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7237C9515E74002F760E45DF /* Frameworks */ = {
+		5B45AA38F4B0ECC2C09A6372 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28DF558EE1D6CD795B16C87B /* Pods_oem_intercom.framework */,
+				FEA4AD17ACF6ECDAB4E70919 /* Pods_oem_intercom.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 				D8C9E6B62497BE8D002E3248 /* oem-intercom */,
 				D8C9E6B52497BE8D002E3248 /* Products */,
 				40E08A3178CDAC1D5630A5BF /* Pods */,
-				7237C9515E74002F760E45DF /* Frameworks */,
+				5B45AA38F4B0ECC2C09A6372 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D8C9E7002497C03D002E3248 /* oem-intercom.entitlements */,
-				D853C230249A64EE00E6B7A5 /* RozcomOem.framework */,
+				D85E6BA6249B620F00977F8C /* RozcomOem.framework */,
 				D8C9E6EB2497BED8002E3248 /* Api */,
 				D8C9E6CE2497BED7002E3248 /* Appdelegate */,
 				D8C9E6D82497BED8002E3248 /* DemoRozcomOem.entitlements */,
@@ -241,12 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8C9E6C82497BE8E002E3248 /* Build configuration list for PBXNativeTarget "oem-intercom" */;
 			buildPhases = (
-				88DB403D96C53DA6141C33A2 /* [CP] Check Pods Manifest.lock */,
+				F195062C7089F74E22141561 /* [CP] Check Pods Manifest.lock */,
 				D8C9E6B02497BE8D002E3248 /* Sources */,
 				D8C9E6B12497BE8D002E3248 /* Frameworks */,
 				D8C9E6B22497BE8D002E3248 /* Resources */,
-				6DEA685963D9AD2813D32CEF /* [CP] Embed Pods Frameworks */,
 				D87F96FE2498CF79007AB6E4 /* Embed Frameworks */,
+				F1D63000697B26B16210E7CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,24 +308,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6DEA685963D9AD2813D32CEF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88DB403D96C53DA6141C33A2 /* [CP] Check Pods Manifest.lock */ = {
+		F195062C7089F74E22141561 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -345,6 +328,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1D63000697B26B16210E7CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -517,7 +517,7 @@
 		};
 		D8C9E6C92497BE8E002E3248 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D747FF9B22DC1E858B8D9B /* Pods-oem-intercom.debug.xcconfig */;
+			baseConfigurationReference = 7C909313233D27E390C76EF6 /* Pods-oem-intercom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "oem-intercom/oem-intercom.entitlements";
@@ -545,7 +545,7 @@
 		};
 		D8C9E6CA2497BE8E002E3248 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03EC88EEB05D8459A1D1CFDB /* Pods-oem-intercom.release.xcconfig */;
+			baseConfigurationReference = 9D0FAB3F0E2A7B403693A236 /* Pods-oem-intercom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "oem-intercom/oem-intercom.entitlements";

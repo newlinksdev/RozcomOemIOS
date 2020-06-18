@@ -54,11 +54,6 @@ PODS:
   - QuickBlox (2.17.4)
   - Quickblox-WebRTC (2.7.5):
     - QuickBlox (>= 2.7.5)
-  - RozcomOem (0.0.6):
-    - Alamofire (= 5.1.0)
-    - QuickBlox (= 2.17.4)
-    - Quickblox-WebRTC (~> 2.7)
-    - SwiftyJSON (= 5.0.0)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
@@ -71,7 +66,6 @@ DEPENDENCIES:
   - NVActivityIndicatorView (= 4.8.0)
   - QMChatViewController (= 0.6.6)
   - Quickblox-WebRTC (~> 2.7)
-  - RozcomOem
   - SDWebImage (~> 4.4.6)
   - SwiftyJSON (= 5.0.0)
 
@@ -83,7 +77,6 @@ SPEC REPOS:
     - QMChatViewController
     - QuickBlox
     - Quickblox-WebRTC
-    - RozcomOem
     - SDWebImage
     - SwiftyJSON
     - TTTAttributedLabel
@@ -95,11 +88,10 @@ SPEC CHECKSUMS:
   QMChatViewController: 43e22929d4abbdb88cc5db5b25c54f13dbfe8373
   QuickBlox: 992be26bc127313991a1337dfd98c9359832c147
   Quickblox-WebRTC: 6be5253719fc8b747408fdac53985d04d40f3172
-  RozcomOem: be140d071fc8f05e431e8b32aeb5e059fff255c0
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 5d9d1186493c29669874a65297d2bd4c0245b514
+PODFILE CHECKSUM: 3f96e3d97d5ee2b1451d4d3971c6a204946b52f1
 
 COCOAPODS: 1.9.3
