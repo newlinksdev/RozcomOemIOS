@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7C57E47BE248CA25DC91DAD3 /* Pods_oem_intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA4AD17ACF6ECDAB4E70919 /* Pods_oem_intercom.framework */; };
-		D85E6BA8249B623500977F8C /* RozcomOem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E6BA6249B620F00977F8C /* RozcomOem.framework */; };
-		D85E6BA9249B623500977F8C /* RozcomOem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85E6BA6249B620F00977F8C /* RozcomOem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8C9E6ED2497BED8002E3248 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CC2497BED7002E3248 /* PushManager.swift */; };
 		D8C9E6EE2497BED8002E3248 /* AcountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CD2497BED7002E3248 /* AcountManager.swift */; };
 		D8C9E6EF2497BED8002E3248 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CF2497BED7002E3248 /* Constants.swift */; };
@@ -32,13 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D87F96FE2498CF79007AB6E4 /* Embed Frameworks */ = {
+		D862E6E424A32C5C003A37FD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D85E6BA9249B623500977F8C /* RozcomOem.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +45,6 @@
 /* Begin PBXFileReference section */
 		7C909313233D27E390C76EF6 /* Pods-oem-intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.debug.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.debug.xcconfig"; sourceTree = "<group>"; };
 		9D0FAB3F0E2A7B403693A236 /* Pods-oem-intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.release.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.release.xcconfig"; sourceTree = "<group>"; };
-		D85E6BA6249B620F00977F8C /* RozcomOem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RozcomOem.framework; sourceTree = "<group>"; };
 		D8C9E6B42497BE8D002E3248 /* oem-intercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oem-intercom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C9E6C52497BE8E002E3248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C9E6CC2497BED7002E3248 /* PushManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
@@ -81,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85E6BA8249B623500977F8C /* RozcomOem.framework in Frameworks */,
 				7C57E47BE248CA25DC91DAD3 /* Pods_oem_intercom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				D8C9E7002497C03D002E3248 /* oem-intercom.entitlements */,
-				D85E6BA6249B620F00977F8C /* RozcomOem.framework */,
 				D8C9E6EB2497BED8002E3248 /* Api */,
 				D8C9E6CE2497BED7002E3248 /* Appdelegate */,
 				D8C9E6D82497BED8002E3248 /* DemoRozcomOem.entitlements */,
@@ -245,9 +239,8 @@
 				D8C9E6B02497BE8D002E3248 /* Sources */,
 				D8C9E6B12497BE8D002E3248 /* Frameworks */,
 				D8C9E6B22497BE8D002E3248 /* Resources */,
-				D87F96FE2498CF79007AB6E4 /* Embed Frameworks */,
 				F1D63000697B26B16210E7CE /* [CP] Embed Pods Frameworks */,
-				D85E6BAA249B697D00977F8C /* ShellScript */,
+				D862E6E424A32C5C003A37FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,23 +302,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D85E6BAA249B697D00977F8C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
-		};
 		F195062C7089F74E22141561 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = 47A3W62M33;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/oem-intercom",
@@ -553,6 +529,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oem-intercom/RozcomOem",
 				);
 				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.newlinks.intercom;
@@ -571,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = 47A3W62M33;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/oem-intercom",
@@ -582,6 +562,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oem-intercom/RozcomOem",
 				);
 				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.newlinks.intercom;

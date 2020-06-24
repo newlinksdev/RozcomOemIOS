@@ -3,6 +3,7 @@ platform :ios, '11.0'
 
 target 'oem-intercom' do
   use_frameworks!
+  pod 'RozcomOem', :source => "$HOME/RozcomOemSpecs.git"
   pod 'NVActivityIndicatorView', '4.8.0'
   pod 'QMChatViewController', '0.6.6'
   pod 'Alamofire', '5.1.0'
