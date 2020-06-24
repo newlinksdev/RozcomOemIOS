@@ -11,5 +11,4 @@ target 'oem-intercom' do
   pod 'Quickblox-WebRTC','~> 2.7'
   pod 'FFCircularProgressView'
   pod 'SDWebImage', '~> 4.4.6'
-
 end
