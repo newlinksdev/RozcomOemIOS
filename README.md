@@ -34,7 +34,7 @@ param isMons set to true for get monitors and false to get panels(default false)
 
 5. - Managers:
 
-	```ROVideoChatManager, ROChatManager``` - managers for call and chat. See example app for. See exapmle app
+	```ROVideoChatManager, ROChatManager``` - managers for call and chat
 
 6. - UI
 
@@ -60,8 +60,6 @@ setup(endCall: UIImage, openAll: UIImage, openDoor: UIImage, gateText: String, s
 # Important thing
         
  Before release to appstore need to remove unneeded architecture(Because we can`t upload framework that support simulator to appstore):
-
-
 
     1. Find RozcomOem in you pods
     2. Right click and select show in finder
