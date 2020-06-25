@@ -22,7 +22,7 @@ if let user = AcountManager.getUser() {
 
 3. - Authenticate:
 
-- ROAPIManager.sharedInstance.getAuth(phone: inputedPhone) - Login 
+-  ROAPIManager.sharedInstance.getAuth(phone: inputedPhone) - Login
 
 - ROAPIManager.sharedInstance.getUserDetails(phone: phoneNumber, authCode: tfLogin.text) - Verification
 
@@ -43,11 +43,30 @@ param isMons set to true for get monitors and false to get panels(default false)
 
 
  Usage: 
+ 
+ let chatViewController = ROChatViewController()
+ chatViewController.currentTenant = currentTenant    
+ chatViewController.oponentPanel = receiveCallPanel 
+  
+ Call setup for set image and label titles:
+ setup(endCall: UIImage, openAll: UIImage, openDoor: UIImage, gateText: String, sureOpenGateText: String, userBusyText: String)
 
- 	let chatViewController = ROChatViewController()
-    chatViewController.currentTenant = currentTenant	
-    chatViewController.oponentPanel = receiveCallPanel 
+
+
+# Important thing
         
-    Call setup for set image and label titles:
-    setup(endCall: UIImage, openAll: UIImage, openDoor: UIImage, gateText: String, sureOpenGateText: String, userBusyText: String)
+ Before release to appstore need to remove unneeded architecture(Because we can`t upload framework that support simulator to appstore):
+
+
+
+    1. Find RozcomOem in you pods
+    2. Right click and select show in finder
+    3. Open it in terminal
+    4. In terminal run: lipo -remove x86_64 -output RozcomOem.framework/RozcomOem RozcomOem.framework/RozcomOem
+
+
+For continue run in simulators need to run :
+
+    1. pod deintegrate
+    2. pod install
 
