@@ -55,7 +55,18 @@ Function setup for set image and label titles:
 setup(endCall: UIImage, openAll: UIImage, openDoor: UIImage, gateText: String, sureOpenGateText: String, userBusyText: String)
 ```
 
+For fix warning `ITMS-90381 Too many symbol files` when distribute in podFile add this code before release. Don't forget to run `pod install` after that
 
+```
+# Set debug information to dwarf
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
+        end
+    end
+end
+```
 
 # Important thing 
 
