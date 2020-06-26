@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0EBC76331464EEBD4D9B55 /* Pods_oem_intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E12DD5FA337BEE03538BAF /* Pods_oem_intercom.framework */; };
 		D8C9E6ED2497BED8002E3248 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CC2497BED7002E3248 /* PushManager.swift */; };
 		D8C9E6EE2497BED8002E3248 /* AcountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CD2497BED7002E3248 /* AcountManager.swift */; };
 		D8C9E6EF2497BED8002E3248 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CF2497BED7002E3248 /* Constants.swift */; };
@@ -26,7 +27,6 @@
 		D8C9E6FD2497BED8002E3248 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C9E6E92497BED8002E3248 /* Login.storyboard */; };
 		D8C9E6FE2497BED8002E3248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6EA2497BED8002E3248 /* LoginViewController.swift */; };
 		D8C9E6FF2497BED8002E3248 /* PushClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6EC2497BED8002E3248 /* PushClient.swift */; };
-		E254BA1CCE0FD830C4F139F0 /* Pods_oem_intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCA397C7F5C6272601F205E /* Pods_oem_intercom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,7 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BB5669737F5D9E898F733516 /* Pods-oem-intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.release.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.release.xcconfig"; sourceTree = "<group>"; };
+		63E12DD5FA337BEE03538BAF /* Pods_oem_intercom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oem_intercom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D651E7BFB1EB1CCB53F6428 /* Pods-oem-intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.release.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.release.xcconfig"; sourceTree = "<group>"; };
+		C27B85B296335BEA02ADE39B /* Pods-oem-intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.debug.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C9E6B42497BE8D002E3248 /* oem-intercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oem-intercom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C9E6C52497BE8E002E3248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C9E6CC2497BED7002E3248 /* PushManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
@@ -68,8 +70,6 @@
 		D8C9E6EA2497BED8002E3248 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D8C9E6EC2497BED8002E3248 /* PushClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushClient.swift; sourceTree = "<group>"; };
 		D8C9E7002497C03D002E3248 /* oem-intercom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "oem-intercom.entitlements"; sourceTree = "<group>"; };
-		EA5EA9E8C659044623FC4533 /* Pods-oem-intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.debug.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.debug.xcconfig"; sourceTree = "<group>"; };
-		ECCA397C7F5C6272601F205E /* Pods_oem_intercom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oem_intercom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,28 +77,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E254BA1CCE0FD830C4F139F0 /* Pods_oem_intercom.framework in Frameworks */,
+				5C0EBC76331464EEBD4D9B55 /* Pods_oem_intercom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		113574C29C2E28355C3D78E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ECCA397C7F5C6272601F205E /* Pods_oem_intercom.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		40E08A3178CDAC1D5630A5BF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EA5EA9E8C659044623FC4533 /* Pods-oem-intercom.debug.xcconfig */,
-				BB5669737F5D9E898F733516 /* Pods-oem-intercom.release.xcconfig */,
+				C27B85B296335BEA02ADE39B /* Pods-oem-intercom.debug.xcconfig */,
+				6D651E7BFB1EB1CCB53F6428 /* Pods-oem-intercom.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D7D89C8D06B8F2D91973F3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E12DD5FA337BEE03538BAF /* Pods_oem_intercom.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D8C9E6AB2497BE8D002E3248 = {
@@ -107,7 +107,7 @@
 				D8C9E6B62497BE8D002E3248 /* oem-intercom */,
 				D8C9E6B52497BE8D002E3248 /* Products */,
 				40E08A3178CDAC1D5630A5BF /* Pods */,
-				113574C29C2E28355C3D78E9 /* Frameworks */,
+				8D7D89C8D06B8F2D91973F3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,13 +235,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8C9E6C82497BE8E002E3248 /* Build configuration list for PBXNativeTarget "oem-intercom" */;
 			buildPhases = (
-				79AC775E9BC7B2C766E9BFBB /* [CP] Check Pods Manifest.lock */,
+				2333092123B1A273AD10F24A /* [CP] Check Pods Manifest.lock */,
 				D8C9E6B02497BE8D002E3248 /* Sources */,
 				D8C9E6B12497BE8D002E3248 /* Frameworks */,
 				D8C9E6B22497BE8D002E3248 /* Resources */,
 				D862E6E424A32C5C003A37FD /* Embed Frameworks */,
-				778E438B0C5AE9208F3770BD /* [CP] Embed Pods Frameworks */,
 				D8D2791724A5FCE100CDF81B /* ShellScript */,
+				42911CB4E40A8BE10128CFCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,24 +303,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		778E438B0C5AE9208F3770BD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		79AC775E9BC7B2C766E9BFBB /* [CP] Check Pods Manifest.lock */ = {
+		2333092123B1A273AD10F24A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,6 +325,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		42911CB4E40A8BE10128CFCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oem-intercom/Pods-oem-intercom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D8D2791724A5FCE100CDF81B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -357,7 +357,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho \"dddddddd\"\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -529,12 +529,12 @@
 		};
 		D8C9E6C92497BE8E002E3248 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA5EA9E8C659044623FC4533 /* Pods-oem-intercom.debug.xcconfig */;
+			baseConfigurationReference = C27B85B296335BEA02ADE39B /* Pods-oem-intercom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "oem-intercom/oem-intercom.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 49;
+				CURRENT_PROJECT_VERSION = 50;
 				DEVELOPMENT_TEAM = 47A3W62M33;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -562,12 +562,12 @@
 		};
 		D8C9E6CA2497BE8E002E3248 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB5669737F5D9E898F733516 /* Pods-oem-intercom.release.xcconfig */;
+			baseConfigurationReference = 6D651E7BFB1EB1CCB53F6428 /* Pods-oem-intercom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "oem-intercom/oem-intercom.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 49;
+				CURRENT_PROJECT_VERSION = 50;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 47A3W62M33;
 				ENABLE_BITCODE = NO;
