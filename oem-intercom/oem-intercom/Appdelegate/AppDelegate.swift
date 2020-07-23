@@ -24,8 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let authSecret = "2DGFXpDth89zbax"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        NSLog("getBuildNumber = " + RozcomOem.getBuildNumber())
-        NSLog("getVersionNumber = " + RozcomOem.getVersionNumber())
         
         RozcomOem.setup(applicationID: applicationID, authKey: authKey, authSecret: authSecret, accountKey: accountKey, apiEndPoint: apiEndPoint, chatEndpoint: chatEndpoint)
         RozcomOem.setupQuickBloxICE(urls: urls, userName: userName, password: password)

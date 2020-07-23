@@ -262,7 +262,7 @@ class HomeViewController: UIViewController {
         oponentPanelCall = oponentPanel
         setupQuickBlox()
         updateUIForCall()
-        chatManager.createDialod(oponentQuickBloxId: oponentPanel.qbID, closureSuccess: { (_, _) -> (Void) in
+        chatManager.createDialod(oponentQuickBloxId: oponentPanel.qbId, closureSuccess: { (_, _) -> (Void) in
             
         }) { (responce) -> (Void) in
             guard !self.videoCallStoped else { return }
@@ -310,7 +310,7 @@ class HomeViewController: UIViewController {
     
     @objc private func openAllDoorTwo() {
         for oponent in listPanels {
-            chatManager.createDialod(oponentQuickBloxId: oponent.qbID, closureSuccess: { (response, dialog) in
+            chatManager.createDialod(oponentQuickBloxId: oponent.qbId, closureSuccess: { (response, dialog) in
                 self.chatManager.sendMessageWithCustomParams(currentUser: self.user, startParam: ROConstants.Message.openDoorTwo) { (error) in
                     if let error = error {
                         self.alert(message: error.localizedDescription)
@@ -383,7 +383,7 @@ class HomeViewController: UIViewController {
     private func prepareForReceiveCall() {
         if QBChat.instance.isConnected {
             QBChat.instance.addDelegate(self)
-            chatManager.createDialod(oponentQuickBloxId: receiveCallPanel!.qbID, closureSuccess: { [weak self] (_, _) -> (Void) in
+            chatManager.createDialod(oponentQuickBloxId: receiveCallPanel!.qbId, closureSuccess: { [weak self] (_, _) -> (Void) in
                 self?.btnOpenDoor.isEnabled = true
                 self?.btnAcceptChat.isEnabled = true
             }) { (_) -> (Void) in

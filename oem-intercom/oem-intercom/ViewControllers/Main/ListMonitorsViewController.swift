@@ -60,6 +60,7 @@ extension ListMonitorsViewController: UITableViewDelegate, UITableViewDataSource
         currentUser.lastName = selectedMonitor.lastName
         currentUser.qbId = selectedMonitor.qbId
         currentUser.qbPassword = selectedMonitor.qbPassword
+        currentUser.qbLogin = selectedMonitor.qbLogin
         btnNext.isHidden = false
     }
 }

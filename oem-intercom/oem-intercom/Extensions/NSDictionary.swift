@@ -13,7 +13,7 @@ extension NSDictionary {
         let called = self["callId"] as! String
         let panelId = self["panel_id"] as! Int
         
-        let panel = ROPanel(buildingID: currentUser.buildingId!, apartmentNo: currentUser.apartmentNo!, isSecurity: callType, name: name, qbID: qbId, qbLogin: "\(qbLogin)")
+        let panel = ROPanel(buildingId: currentUser.buildingId!, apartmentNo: currentUser.apartmentNo!, isSecurity: callType, name: name, qbId: qbId, qbLogin: "\(qbLogin)")
         panel.entranceId = entraceId
         panel.callId = called
         panel.id = panelId
