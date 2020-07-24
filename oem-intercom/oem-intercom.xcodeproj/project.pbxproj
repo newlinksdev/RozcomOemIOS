@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C0EBC76331464EEBD4D9B55 /* Pods_oem_intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E12DD5FA337BEE03538BAF /* Pods_oem_intercom.framework */; };
 		D8C9E6ED2497BED8002E3248 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CC2497BED7002E3248 /* PushManager.swift */; };
-		D8C9E6EE2497BED8002E3248 /* AcountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CD2497BED7002E3248 /* AcountManager.swift */; };
+		D8C9E6EE2497BED8002E3248 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CD2497BED7002E3248 /* AccountManager.swift */; };
 		D8C9E6EF2497BED8002E3248 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CF2497BED7002E3248 /* Constants.swift */; };
 		D8C9E6F02497BED8002E3248 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C9E6D02497BED7002E3248 /* Localizable.strings */; };
 		D8C9E6F12497BED8002E3248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6D32497BED7002E3248 /* AppDelegate.swift */; };
@@ -36,7 +36,7 @@
 		D8C9E6B42497BE8D002E3248 /* oem-intercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oem-intercom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C9E6C52497BE8E002E3248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C9E6CC2497BED7002E3248 /* PushManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
-		D8C9E6CD2497BED7002E3248 /* AcountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcountManager.swift; sourceTree = "<group>"; };
+		D8C9E6CD2497BED7002E3248 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		D8C9E6CF2497BED7002E3248 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8C9E6D12497BED7002E3248 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D8C9E6D22497BED7002E3248 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D8C9E6CC2497BED7002E3248 /* PushManager.swift */,
-				D8C9E6CD2497BED7002E3248 /* AcountManager.swift */,
+				D8C9E6CD2497BED7002E3248 /* AccountManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 				D8C9E6F82497BED8002E3248 /* Storyboards.swift in Sources */,
 				D8C9E6F12497BED8002E3248 /* AppDelegate.swift in Sources */,
 				D8C9E6ED2497BED8002E3248 /* PushManager.swift in Sources */,
-				D8C9E6EE2497BED8002E3248 /* AcountManager.swift in Sources */,
+				D8C9E6EE2497BED8002E3248 /* AccountManager.swift in Sources */,
 				D8C9E6F42497BED8002E3248 /* NSDictionary.swift in Sources */,
 				D8C9E6FA2497BED8002E3248 /* HomeViewController.swift in Sources */,
 				D8C9E6F92497BED8002E3248 /* MonitorTableViewCell.swift in Sources */,

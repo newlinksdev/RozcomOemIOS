@@ -31,7 +31,7 @@ class ListMonitorsViewController: UIViewController {
             guard let `self` = self else { return }
             switch result {
             case .success(_):
-                AcountManager.setUser(user: self.currentUser)
+                AccountManager.setUser(user: self.currentUser)
                 PushManager.shared.sendPushToken()
                 HomeViewController.presentAsRoot()
             case .failure(let error):

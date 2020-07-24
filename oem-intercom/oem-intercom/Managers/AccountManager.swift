@@ -9,7 +9,7 @@
 import Foundation
 import RozcomOem
 
-class AcountManager {
+class AccountManager {
     static let profile = "profile"
     
     static let userDefaults = UserDefaults.standard

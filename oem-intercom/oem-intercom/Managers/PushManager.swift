@@ -24,7 +24,7 @@ class PushManager: NSObject {
     }
     
     func sendPushToken() {
-        guard let user = AcountManager.getUser() else { return }
+        guard let user = AccountManager.getUser() else { return }
         let token = UserDefaults.standard.string(forKey: Constants.Params.token)
         PushClient.instanse.registerDevice(qbId: user.qbId, token: token ?? "")
     }
@@ -36,7 +36,7 @@ class PushManager: NSObject {
             else {
                 return
         }
-        guard let _ = AcountManager.getUser() else { return }
+        guard let _ = AccountManager.getUser() else { return }
         if let topViewController = topViewController() {
             if topViewController is UINavigationController {
                 let lastVC = (topViewController as! UINavigationController).children.last

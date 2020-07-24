@@ -31,38 +31,37 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var btnAcceptChat: UIButton!
     @IBOutlet private weak var btnOpenDoor: UIButton!
     @IBOutlet private weak var btnOpenGate: UIButton!
-    @IBOutlet weak var startEndCallView: UIView!
-    @IBOutlet weak var btnAcceptCall: UIButton!
-    @IBOutlet weak var btnEndCall: UIButton!
-    @IBOutlet weak var controlButtonsStack: UIStackView!
+    @IBOutlet private weak var startEndCallView: UIView!
+    @IBOutlet private weak var btnAcceptCall: UIButton!
+    @IBOutlet private weak var btnEndCall: UIButton!
+    @IBOutlet private weak var controlButtonsStack: UIStackView!
     
-//    MARK: - Call
-    @IBOutlet weak var callView: ROCallView!
-    @IBOutlet weak var receiveCallView: RORecieveCallView!
+    @IBOutlet private weak var callView: ROCallView!
+    @IBOutlet private weak var receiveCallView: RORecieveCallView!
     
-    private var player: AVAudioPlayer?
-    private var connectedUserId: NSNumber? = nil
-    public var homeState: HomeState = .free
-    private var countMessages: Int = 0
+    //    MARK: - Property
     public var isConnected: Bool = false
     public var oponentPanelCall: ROPanel!
     public var receiveCallPanel: ROPanel!
+    public var homeState: HomeState = .free
+    
+    private var player: AVAudioPlayer?
+    private var connectedUserId: NSNumber? = nil
+    private var countMessages: Int = 0
     private var callTimer: Timer?
     private var timeForCall: Int!
     private var videoCallStoped: Bool = false
     private var secondsForReceiveCall: Int = Constants.ReceiveCall.secondForReceive
     private var receiveCallTimer: Timer?
-    
-//    MARK: - Property
     private var isDnd: Bool!
     private var isPPt: Bool!
     private let defaults = UserDefaults.standard
     private let chatManager = ROChatManager.instance
     private var videoChatManager: ROVideoChatManager = .instanse
-    private let user = AcountManager.getUser()!
-    
+    private let user = AccountManager.getUser()!
     private var listPanels: [ROPanel] = []
     private var currentIndex: Int = 0
+    
     private var selectedPanel: ROPanel? {
         didSet {
             if let value = self.selectedPanel {

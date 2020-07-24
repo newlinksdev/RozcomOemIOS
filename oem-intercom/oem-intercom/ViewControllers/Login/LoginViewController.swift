@@ -84,7 +84,7 @@ class LoginViewController: UIViewController {
                     if UIDevice.current.userInterfaceIdiom == .pad {
                         self.toMonitorsVC(user: user)
                     } else {
-                        AcountManager.setUser(user: user)
+                        AccountManager.setUser(user: user)
                         PushManager.shared.sendPushToken()
                         HomeViewController.presentAsRoot()
                     }

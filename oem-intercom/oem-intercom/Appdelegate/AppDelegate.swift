@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func tryReconnectToQuickBlox() {
-        if let user = AcountManager.getUser() {
+        if let user = AccountManager.getUser() {
             ROLoginManager.instance.connectToQuickBlox(quickBloxUserId: user.qbId, password: user.qbPassword!, quickBloxLogin: user.qbLogin, completion: { (error) in
                 print("error connection to quickblox: \(error)")
             })
@@ -68,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func showLoginIfNeeded() {
-        if AcountManager.getUser() == nil {
+        if AccountManager.getUser() == nil {
             let loginVC = Storyboard.login.instanceOf(viewController: UINavigationController.self)!
             window?.rootViewController = loginVC
             self.window!.makeKeyAndVisible()
