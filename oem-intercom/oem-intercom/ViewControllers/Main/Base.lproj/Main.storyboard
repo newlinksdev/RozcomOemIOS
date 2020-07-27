@@ -17,8 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp8-LM-dzd">
+                                <rect key="frame" x="10" y="753.5" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="IRk-AB-NhZ">
-                                <rect key="frame" x="0.0" y="57.5" width="414" height="613"/>
+                                <rect key="frame" x="0.0" y="57.5" width="414" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer7" translatesAutoresizingMaskIntoConstraints="NO" id="ATs-o5-oQi">
@@ -241,13 +247,13 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separator" translatesAutoresizingMaskIntoConstraints="NO" id="DFb-s9-sMp">
-                                <rect key="frame" x="0.0" y="670.5" width="414" height="3.5"/>
+                                <rect key="frame" x="0.0" y="660.5" width="414" height="3.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3.6699999999999999" id="zHM-Wt-Cou"/>
                                 </constraints>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ild-2b-NGw">
-                                <rect key="frame" x="0.0" y="570.5" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="560.5" width="414" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4F-7T-hfz">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -282,10 +288,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ri9-Xb-RwN">
-                                <rect key="frame" x="0.0" y="674" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="664" width="414" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIQ-EH-f6e">
-                                        <rect key="frame" x="42" y="-35" width="330" height="170"/>
+                                        <rect key="frame" x="42" y="-30" width="330" height="170"/>
                                         <state key="normal" image="icon_key" backgroundImage="open_door_db"/>
                                         <state key="highlighted" backgroundImage="open_door_db_selected"/>
                                         <connections>
@@ -293,7 +299,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-LL-bEf">
-                                        <rect key="frame" x="0.0" y="-35" width="42" height="170"/>
+                                        <rect key="frame" x="0.0" y="-30" width="42" height="170"/>
                                         <state key="normal" image="icon_chat" backgroundImage="chat_bg"/>
                                         <state key="highlighted" backgroundImage="chat_bg_selected"/>
                                         <connections>
@@ -301,7 +307,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-gO-Inz">
-                                        <rect key="frame" x="372" y="-35" width="42" height="170"/>
+                                        <rect key="frame" x="372" y="-30" width="42" height="170"/>
                                         <state key="normal" image="icon_gate" backgroundImage="chat_bg"/>
                                         <state key="highlighted" backgroundImage="chat_bg_selected"/>
                                         <connections>
@@ -309,7 +315,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="eOd-gO-Inz" firstAttribute="leading" secondItem="jIQ-EH-f6e" secondAttribute="trailing" id="2xs-we-rQx"/>
                                     <constraint firstItem="eOd-gO-Inz" firstAttribute="centerY" secondItem="Ri9-Xb-RwN" secondAttribute="centerY" id="DCN-Gl-sfO"/>
@@ -322,14 +328,14 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKf-Mb-Cct" customClass="ROCallView" customModule="RozcomOem">
-                                <rect key="frame" x="52.5" y="204.5" width="309" height="366"/>
+                                <rect key="frame" x="56.5" y="204.5" width="301" height="356"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FKf-Mb-Cct" secondAttribute="height" multiplier="60:71" id="8XU-mc-MRf"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRs-Nn-WRA" customClass="RORecieveCallView" customModule="RozcomOem">
-                                <rect key="frame" x="52.5" y="204.5" width="309" height="366"/>
+                                <rect key="frame" x="56.5" y="204.5" width="301" height="356"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aRs-Nn-WRA" secondAttribute="height" multiplier="60:71" id="dUl-KR-3uQ"/>
@@ -343,16 +349,18 @@
                             <constraint firstItem="ATs-o5-oQi" firstAttribute="leading" secondItem="J81-gm-G9z" secondAttribute="leading" id="5xK-dW-ZvW"/>
                             <constraint firstAttribute="trailing" secondItem="IRk-AB-NhZ" secondAttribute="trailing" id="7Pn-Aq-U2j"/>
                             <constraint firstItem="J81-gm-G9z" firstAttribute="trailing" secondItem="ild-2b-NGw" secondAttribute="trailing" id="7mm-b3-YWK"/>
-                            <constraint firstItem="J81-gm-G9z" firstAttribute="bottom" secondItem="DFb-s9-sMp" secondAttribute="bottom" constant="100" id="AnO-Kd-AFJ"/>
+                            <constraint firstItem="J81-gm-G9z" firstAttribute="bottom" secondItem="DFb-s9-sMp" secondAttribute="bottom" constant="110" id="AnO-Kd-AFJ"/>
                             <constraint firstItem="IRk-AB-NhZ" firstAttribute="leading" secondItem="LbZ-la-71b" secondAttribute="leading" id="BDw-fY-n1H"/>
                             <constraint firstItem="Ri9-Xb-RwN" firstAttribute="trailing" secondItem="J81-gm-G9z" secondAttribute="trailing" constant="50" id="BnO-4E-Ici">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-50"/>
                             </constraint>
                             <constraint firstItem="IRk-AB-NhZ" firstAttribute="top" secondItem="bgm-Qo-u9O" secondAttribute="bottom" id="Dyx-bb-0w2"/>
+                            <constraint firstItem="J81-gm-G9z" firstAttribute="bottom" secondItem="Lp8-LM-dzd" secondAttribute="bottom" id="FFn-Di-rIR"/>
                             <constraint firstItem="aRs-Nn-WRA" firstAttribute="centerX" secondItem="LbZ-la-71b" secondAttribute="centerX" id="GNi-VO-RA9"/>
                             <constraint firstItem="ild-2b-NGw" firstAttribute="leading" secondItem="J81-gm-G9z" secondAttribute="leading" id="Iqm-oM-dm4"/>
                             <constraint firstItem="FKf-Mb-Cct" firstAttribute="top" secondItem="s6v-cR-Mv3" secondAttribute="bottom" constant="40" id="J9t-zW-a5x"/>
                             <constraint firstItem="J81-gm-G9z" firstAttribute="bottom" secondItem="Ri9-Xb-RwN" secondAttribute="bottom" id="Lof-Jy-Lj8"/>
+                            <constraint firstItem="Lp8-LM-dzd" firstAttribute="leading" secondItem="J81-gm-G9z" secondAttribute="leading" constant="10" id="NIM-sg-NS4"/>
                             <constraint firstItem="ild-2b-NGw" firstAttribute="top" secondItem="aRs-Nn-WRA" secondAttribute="bottom" id="O2Y-kj-Mfm"/>
                             <constraint firstItem="J81-gm-G9z" firstAttribute="trailing" secondItem="DFb-s9-sMp" secondAttribute="trailing" id="PgD-Em-pVs"/>
                             <constraint firstItem="Ri9-Xb-RwN" firstAttribute="top" secondItem="DFb-s9-sMp" secondAttribute="bottom" id="Qw9-Mp-ueC"/>
@@ -367,6 +375,7 @@
                             <constraint firstItem="fmF-tV-eMF" firstAttribute="leading" secondItem="J81-gm-G9z" secondAttribute="leading" id="gm8-p4-pwd"/>
                             <constraint firstItem="FKf-Mb-Cct" firstAttribute="centerX" secondItem="LbZ-la-71b" secondAttribute="centerX" id="gnf-E1-rYN"/>
                             <constraint firstItem="zkg-cl-mst" firstAttribute="trailing" secondItem="J81-gm-G9z" secondAttribute="trailing" id="iBz-kN-0ga"/>
+                            <constraint firstItem="J81-gm-G9z" firstAttribute="trailing" secondItem="Lp8-LM-dzd" secondAttribute="trailing" constant="10" id="kIf-Dw-EXm"/>
                             <constraint firstItem="bgm-Qo-u9O" firstAttribute="leading" secondItem="J81-gm-G9z" secondAttribute="leading" id="piX-BN-xpR"/>
                             <constraint firstItem="Ri9-Xb-RwN" firstAttribute="centerX" secondItem="LbZ-la-71b" secondAttribute="centerX" id="q9z-Ke-hRs"/>
                             <constraint firstItem="DFb-s9-sMp" firstAttribute="top" secondItem="ild-2b-NGw" secondAttribute="bottom" id="rTn-TY-pq3"/>
@@ -414,10 +423,12 @@
                         <outlet property="btnRight" destination="cjU-lV-Teq" id="Uue-CZ-Aoi"/>
                         <outlet property="btnRightGuard" destination="LaO-CB-YN8" id="cy0-5J-u2A"/>
                         <outlet property="callView" destination="FKf-Mb-Cct" id="2f2-NV-4vk"/>
+                        <outlet property="constraintsPanelViewBottom" destination="Lof-Jy-Lj8" id="1wS-Na-rDL"/>
                         <outlet property="controlButtonsStack" destination="s6v-cR-Mv3" id="HLe-Dd-8cr"/>
                         <outlet property="lblDoor" destination="GFL-wj-A5w" id="hgf-DD-Vdq"/>
                         <outlet property="lblGuardDoor" destination="0GJ-AQ-VUm" id="EgK-kW-g16"/>
                         <outlet property="lblLeft" destination="iUe-Qp-sBe" id="RzB-1o-WOU"/>
+                        <outlet property="lblTime" destination="Lp8-LM-dzd" id="OfQ-2f-M6P"/>
                         <outlet property="receiveCallView" destination="aRs-Nn-WRA" id="xf6-jd-IF8"/>
                         <outlet property="startEndCallView" destination="ild-2b-NGw" id="zCZ-Qz-Xr7"/>
                     </connections>

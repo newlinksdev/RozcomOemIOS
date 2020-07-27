@@ -35,9 +35,11 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var btnAcceptCall: UIButton!
     @IBOutlet private weak var btnEndCall: UIButton!
     @IBOutlet private weak var controlButtonsStack: UIStackView!
+    @IBOutlet private weak var lblTime: UILabel!
     
     @IBOutlet private weak var callView: ROCallView!
     @IBOutlet private weak var receiveCallView: RORecieveCallView!
+    @IBOutlet private weak var constraintsPanelViewBottom: NSLayoutConstraint!
     
     //    MARK: - Property
     public var isConnected: Bool = false
@@ -45,6 +47,7 @@ class HomeViewController: UIViewController {
     public var receiveCallPanel: ROPanel!
     public var homeState: HomeState = .free
     
+    private var updateTimeTimer = Timer()
     private var player: AVAudioPlayer?
     private var connectedUserId: NSNumber? = nil
     private var countMessages: Int = 0
@@ -327,6 +330,11 @@ class HomeViewController: UIViewController {
     }
     
     private func setupButtons() {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            constraintsPanelViewBottom.constant = 30
+            tick()
+            updateTimeTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
+        }
         let logo = #imageLiteral(resourceName: "logo")
         self.navigationItem.titleView = UIImageView(image: logo)
         let defaults = UserDefaults.standard
@@ -348,6 +356,11 @@ class HomeViewController: UIViewController {
             pptTitle = "ppt_off".localized
         }
         btnPtt.setTitle(pptTitle, for: .normal)
+    }
+    
+    @objc func tick() {
+        let today = Date()
+        lblTime.text = today.dayOfWeek() + " " + DateFormatter.localizedString(from: today, dateStyle: .medium, timeStyle: .medium)
     }
     
     private func updateUIForCall() {
