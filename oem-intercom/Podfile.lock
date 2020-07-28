@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.1.0)
+  - Alamofire (5.2.2)
   - FFCircularProgressView (0.5)
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
@@ -52,15 +52,8 @@ PODS:
     - SDWebImage
     - TTTAttributedLabel
   - QuickBlox (2.17.4)
-  - Quickblox-WebRTC (2.7.4):
-    - QuickBlox (>= 2.17.2)
-  - RozcomOem (0.1.5):
-    - Alamofire (= 5.1.0)
-    - QMChatViewController (= 0.6.6)
-    - QuickBlox (= 2.17.4)
-    - Quickblox-WebRTC (= 2.7.4)
-    - SDWebImage (~> 4.4.6)
-    - SwiftyJSON (= 5.0.0)
+  - Quickblox-WebRTC (2.7.5):
+    - QuickBlox (>= 2.7.5)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
@@ -68,12 +61,11 @@ PODS:
   - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
-  - Alamofire (= 5.1.0)
+  - Alamofire (= 5.2.2)
   - FFCircularProgressView
   - NVActivityIndicatorView (= 4.8.0)
   - QMChatViewController (= 0.6.6)
-  - Quickblox-WebRTC (= 2.7.4)
-  - RozcomOem (= 0.1.5)
+  - Quickblox-WebRTC (= 2.7.5)
   - SDWebImage (~> 4.4.6)
   - SwiftyJSON (= 5.0.0)
 
@@ -85,23 +77,21 @@ SPEC REPOS:
     - QMChatViewController
     - QuickBlox
     - Quickblox-WebRTC
-    - RozcomOem
     - SDWebImage
     - SwiftyJSON
     - TTTAttributedLabel
 
 SPEC CHECKSUMS:
-  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   FFCircularProgressView: 683a4ab1e1bd613246a3dffa61503ffdebcde8d8
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   QMChatViewController: 43e22929d4abbdb88cc5db5b25c54f13dbfe8373
   QuickBlox: 992be26bc127313991a1337dfd98c9359832c147
-  Quickblox-WebRTC: cd1a5159c2ddb5b0feaf00b7a38b5551743eb067
-  RozcomOem: 21c3c4494b71a7970728f470324384c4c7fa3798
+  Quickblox-WebRTC: 6be5253719fc8b747408fdac53985d04d40f3172
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 62eacae51968ac2be0720d6b063cc2eec545ab99
+PODFILE CHECKSUM: e75c6c596a95486d3de21713541d8ea53761cdfc
 
 COCOAPODS: 1.9.3

@@ -30,6 +30,19 @@
 		D8C9E6FF2497BED8002E3248 /* PushClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6EC2497BED8002E3248 /* PushClient.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D86C6F2B24D02B8D009DBB35 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		63E12DD5FA337BEE03538BAF /* Pods_oem_intercom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oem_intercom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D651E7BFB1EB1CCB53F6428 /* Pods-oem-intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.release.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +244,7 @@
 				D8C9E6B22497BE8D002E3248 /* Resources */,
 				D8D2791724A5FCE100CDF81B /* ShellScript */,
 				42911CB4E40A8BE10128CFCA /* [CP] Embed Pods Frameworks */,
+				D86C6F2B24D02B8D009DBB35 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
