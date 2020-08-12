@@ -23,9 +23,7 @@ if let user = AcountManager.getUser() {
 
 3. - Authenticate:
 
--  ```ROAPIManager.sharedInstance.getAuth(phone: inputedPhone)``` - Login
-
-- ```ROAPIManager.sharedInstance.getUserDetails(phone: phoneNumber, authCode: tfLogin.text)``` - Verification
+-  ```ROAPIManager.sharedInstance.openClient(mobile: String)``` - Use this method for do a login 
 
 4. - Get list panels and monitors:
 
