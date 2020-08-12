@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7ED6C12CB17314D9034221F3 /* Pods_oem_intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D631A668C13EEC13C77C234F /* Pods_oem_intercom.framework */; };
 		D8562B4424CEFB5F00DE6266 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8562B4324CEFB5F00DE6266 /* Date.swift */; };
+		D8812D0D24E415F300D74777 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8812D0B24E415F300D74777 /* Launch.storyboard */; };
+		D8812D0E24E415F300D74777 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8812D0C24E415F300D74777 /* LaunchViewController.swift */; };
 		D8C9E6ED2497BED8002E3248 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CC2497BED7002E3248 /* PushManager.swift */; };
 		D8C9E6EE2497BED8002E3248 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CD2497BED7002E3248 /* AccountManager.swift */; };
 		D8C9E6EF2497BED8002E3248 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6CF2497BED7002E3248 /* Constants.swift */; };
@@ -25,8 +27,6 @@
 		D8C9E6FA2497BED8002E3248 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6E42497BED8002E3248 /* HomeViewController.swift */; };
 		D8C9E6FB2497BED8002E3248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C9E6E52497BED8002E3248 /* Main.storyboard */; };
 		D8C9E6FC2497BED8002E3248 /* ListMonitorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6E72497BED8002E3248 /* ListMonitorsViewController.swift */; };
-		D8C9E6FD2497BED8002E3248 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C9E6E92497BED8002E3248 /* Login.storyboard */; };
-		D8C9E6FE2497BED8002E3248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6EA2497BED8002E3248 /* LoginViewController.swift */; };
 		D8C9E6FF2497BED8002E3248 /* PushClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E6EC2497BED8002E3248 /* PushClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +48,8 @@
 		81A1DEED1C89F09E3194E7FF /* Pods-oem-intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oem-intercom.release.xcconfig"; path = "Target Support Files/Pods-oem-intercom/Pods-oem-intercom.release.xcconfig"; sourceTree = "<group>"; };
 		D631A668C13EEC13C77C234F /* Pods_oem_intercom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oem_intercom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8562B4324CEFB5F00DE6266 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		D8812D0B24E415F300D74777 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		D8812D0C24E415F300D74777 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		D8C9E6B42497BE8D002E3248 /* oem-intercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oem-intercom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C9E6C52497BE8E002E3248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C9E6CC2497BED7002E3248 /* PushManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
@@ -68,8 +70,6 @@
 		D8C9E6E42497BED8002E3248 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8C9E6E62497BED8002E3248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8C9E6E72497BED8002E3248 /* ListMonitorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMonitorsViewController.swift; sourceTree = "<group>"; };
-		D8C9E6E92497BED8002E3248 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		D8C9E6EA2497BED8002E3248 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D8C9E6EC2497BED8002E3248 /* PushClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushClient.swift; sourceTree = "<group>"; };
 		D8C9E7002497C03D002E3248 /* oem-intercom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "oem-intercom.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +101,15 @@
 				D631A668C13EEC13C77C234F /* Pods_oem_intercom.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8812D0A24E415E700D74777 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				D8812D0B24E415F300D74777 /* Launch.storyboard */,
+				D8812D0C24E415F300D74777 /* LaunchViewController.swift */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		D8C9E6AB2497BE8D002E3248 = {
@@ -189,8 +198,8 @@
 			children = (
 				D8C9E6DE2497BED8002E3248 /* LaunchScreen.storyboard */,
 				D8C9E6E02497BED8002E3248 /* Storyboards.swift */,
+				D8812D0A24E415E700D74777 /* Launch */,
 				D8C9E6E12497BED8002E3248 /* Main */,
-				D8C9E6E82497BED8002E3248 /* Login */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,15 +221,6 @@
 				D8C9E6E32497BED8002E3248 /* MonitorTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		D8C9E6E82497BED8002E3248 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				D8C9E6E92497BED8002E3248 /* Login.storyboard */,
-				D8C9E6EA2497BED8002E3248 /* LoginViewController.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		D8C9E6EB2497BED8002E3248 /* Api */ = {
@@ -296,10 +296,10 @@
 			files = (
 				D8C9E6F22497BED8002E3248 /* Assets.xcassets in Resources */,
 				D8C9E6FB2497BED8002E3248 /* Main.storyboard in Resources */,
-				D8C9E6FD2497BED8002E3248 /* Login.storyboard in Resources */,
 				D8C9E6F72497BED8002E3248 /* LaunchScreen.storyboard in Resources */,
 				D8C9E6F32497BED8002E3248 /* intercom.wav in Resources */,
 				D8C9E6F02497BED8002E3248 /* Localizable.strings in Resources */,
+				D8812D0D24E415F300D74777 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,12 +369,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C9E6FE2497BED8002E3248 /* LoginViewController.swift in Sources */,
 				D8C9E6FF2497BED8002E3248 /* PushClient.swift in Sources */,
 				D8C9E6FC2497BED8002E3248 /* ListMonitorsViewController.swift in Sources */,
 				D8C9E6F82497BED8002E3248 /* Storyboards.swift in Sources */,
 				D8C9E6F12497BED8002E3248 /* AppDelegate.swift in Sources */,
 				D8C9E6ED2497BED8002E3248 /* PushManager.swift in Sources */,
+				D8812D0E24E415F300D74777 /* LaunchViewController.swift in Sources */,
 				D8C9E6EE2497BED8002E3248 /* AccountManager.swift in Sources */,
 				D8C9E6F42497BED8002E3248 /* NSDictionary.swift in Sources */,
 				D8C9E6FA2497BED8002E3248 /* HomeViewController.swift in Sources */,

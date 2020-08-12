@@ -61,7 +61,7 @@ class HomeViewController: UIViewController {
     private let defaults = UserDefaults.standard
     private let chatManager = ROChatManager.instance
     private var videoChatManager: ROVideoChatManager = .instanse
-    private let user = AccountManager.getUser()!
+    private let user = AccountManager.getTenant()!
     private var listPanels: [ROPanel] = []
     private var currentIndex: Int = 0
     

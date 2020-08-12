@@ -14,12 +14,12 @@ class AccountManager {
     
     static let userDefaults = UserDefaults.standard
     
-    class func setUser(user: ROTenant) {
-        let data = NSKeyedArchiver.archivedData(withRootObject: user)
+    class func setTenant(tenant: ROTenant) {
+        let data = NSKeyedArchiver.archivedData(withRootObject: tenant)
         userDefaults.set(data, forKey: profile)
     }
     
-    class func getUser() -> ROTenant? {
+    class func getTenant() -> ROTenant? {
         
         guard let decodedUser = userDefaults.object(forKey: profile) as? Data,
             let user = NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as? ROTenant else {

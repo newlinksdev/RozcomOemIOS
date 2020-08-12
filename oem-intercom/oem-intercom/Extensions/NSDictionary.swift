@@ -4,7 +4,7 @@ import RozcomOem
 
 extension NSDictionary {
     func toQBHUser() -> ROPanel {
-        let currentUser = AccountManager.getUser()!
+        let currentUser = AccountManager.getTenant()!
         let qbId = self["sender"] as! Int
         let qbLogin = self["user_id_sender"] as! Int
         let name = self["sender_name"] as! String

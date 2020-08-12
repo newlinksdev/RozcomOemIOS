@@ -4,7 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'oem-intercom' do
   use_frameworks!
-  pod 'RozcomOem', '0.1.6'
+  pod 'RozcomOem', '0.1.7'
   pod 'NVActivityIndicatorView', '4.8.0'
   pod 'QMChatViewController', '0.6.6'
   pod 'Alamofire', '5.2.2'
